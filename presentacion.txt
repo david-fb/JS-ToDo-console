@@ -1,0 +1,7 @@
+Nombre: David Fernando Basto Martinez
+
+Programa: 441A-INGENIERÍA DE SOFTWARE 
+
+Lenguaje elegido: JavaScript
+
+Descripción del proyecto: To-Do List en JavaScript que permite crear, listar y completar tareas desde la consola.
