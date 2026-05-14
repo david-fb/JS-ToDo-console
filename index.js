@@ -21,4 +21,11 @@ function listarTareas() {
   });
 }
 
-listarTareas();
+function agregarTarea(nombre) {
+  const tasks = loadTasks();
+  tasks.push({ nombre, completada: false });
+  saveTasks(tasks);
+  console.log(`Tarea "${nombre}" agregada.`);
+}
+
+agregarTarea("Mi primera tarea");
