@@ -28,4 +28,15 @@ function agregarTarea(nombre) {
   console.log(`Tarea "${nombre}" agregada.`);
 }
 
-agregarTarea("Mi primera tarea");
+function completarTarea(indice) {
+  const tasks = loadTasks();
+  if (!tasks[indice]) {
+    console.log("Tarea no encontrada.");
+    return;
+  }
+  tasks[indice].completada = true;
+  saveTasks(tasks);
+  console.log(`Tarea "${tasks[indice].nombre}" completada.`);
+}
+
+completarTarea(0);
